@@ -80,13 +80,13 @@ and all the letters are type: char.
 
 Here are three relationship, (primary keys are in **bold**)::
 
-Store(**storeid**, s_name, employee_number, city)
+* Store(**storeid**, s_name, employee_number, city)
 
-Goods(**g_id**, g_name, price)
+* Goods(**g_id**, g_name, price)
 
-Supply(**storeid**, **g_id**)
+* Supply(**storeid**, **g_id**)
 
-###Requirements:
+### Requirements:
 
 First, describe the meaning of following relational algebra expressions in one or two sentences.
 Second, Translate the following relational algebra expressions in SQL. Make sure your SQL can be executed.
@@ -96,4 +96,4 @@ Second, Translate the following relational algebra expressions in SQL. Make sure
 
 2. π<sub>s_name(((σ<sub>g_name = "pencil"</sub>Goods) ⨝ Supply) ⨝ Store)
 
-3. π<sub>s_name, city(Supply÷π<sub>g_id</sub>(σ<sub>storeid='08080870707'</sub>(Supply))⨝ Store)
+3. π<sub>s_name, city(Supply÷π<sub>g_id</sub>(σ<sub>storeid='0808'</sub>(Supply))⨝ Store)
