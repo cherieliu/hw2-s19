@@ -1,4 +1,4 @@
-# Homework 2 Solution
+# Homework 2
 
 * Assigned: Feb 21 
 * Due: Mar 5 at 10:00AM 
