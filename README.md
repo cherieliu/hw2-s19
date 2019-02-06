@@ -4,6 +4,14 @@
 * Due: Mar 5 at 10:00AM 
 * worth 3.75% of your grade 
 
+## Submission
+
+### Format
+1. Type your answer (markdown or latex or ...).
+2. Each question occupies separate pages.
+
+### Submit your pdf on GradeScope
+
 ## 1. Relational Algebra
 
 **(2 points each, 6 points total)**
@@ -42,7 +50,6 @@ T1
 |A | B | C |  
 |---|---|---|
 |1 | x | a |
-|1 | x | c |
 |2 | y | c |
 |2 | y | b |
 |2 | z | c | 
@@ -65,7 +72,7 @@ and all the letters are type: char.
 
 1. π<sub>A,B</sub>(T1)
 
-2. T1 × π<sub>A</sub>(T1)
+2. T2 × π<sub>A</sub>(T2)
 
 3. T1 ⨝<sub>T1.B=T2.C</sub> T2 
 
@@ -78,7 +85,7 @@ and all the letters are type: char.
 
 **(2 points each, 6 points total)**
 
-Here are three relationship, (primary keys are in **bold**)::
+Here are three relationship, (primary keys are in **bold**):
 
 * Store(**storeid**, s_name, employee_number, city)
 
