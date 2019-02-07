@@ -2,7 +2,7 @@
 
 * Assigned: Feb 21
 * Due: Mar 5 at 10:00AM
-* worth 3.75% of your grade
+* Worth 3.75% of your grade
 
 ## Submission
 
@@ -38,7 +38,7 @@ Construct relational algebra for the following queries:
 * **Q2**: Find the *ssn* of the persons who own all the different kinds of stocks his/her manager owns.
     (Note: we only consider the type(*companyid*), we do not consider the *sharenum*).
 
-* **Q2**: Find the *ssn* of the persons who own at least three different types stocks.
+* **Q2**: Find the *ssn* of the persons who own at least three different types of stocks.
 
 
 ## 2. More Relational Algebra
@@ -66,8 +66,8 @@ B | C | D
 
 Write the result table for the relational algebra expressions:
 
-Note: Here, we assume the attributes whose values are all numbers are the type: integers
-and all the letters are type: char.
+Note: Here, we assume the attributes whose values are all numbers are the same type: integers
+and all the letters are the same type: char.
 
 
 1. π<sub>A,B</sub>(T1)
