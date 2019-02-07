@@ -1,8 +1,8 @@
 # Homework 2
 
-* Assigned: Feb 21 
-* Due: Mar 5 at 10:00AM 
-* worth 3.75% of your grade 
+* Assigned: Feb 21
+* Due: Mar 5 at 10:00AM
+* worth 3.75% of your grade
 
 ## Submission
 
@@ -18,27 +18,27 @@
 
 Consider the simplified Employee Stock Ownership Database below (primary keys are in **bold**):
 
-* Person(**ssn**, companyid, salary, managerid) 
+* Person(**ssn**, companyid, salary, managerid)
 
-This is employee table. *companyid* is a foreign key which points to *Company*. 
-We assume one employee can only works at one company. *managerid* is also a foreign key 
-which points to *Person* itself. 
+This is an employee table. *companyid* is a foreign key which points to *Company*.
+We assume one employee can only works at one company. *managerid* is a foreign key
+which points to *Person* itself.
 
-* Company(**companyid**, companyname, location, size)
+* Company(**companyid**, companyname, location)
 
 * Holding(**ssn**, **companyid**, sharenum)
 
-This table describes an employee(*ssn*) owns *sharenum* stocks from *companyid*.
- 
+This table describes an employee(*ssn*) owns *sharenum* stocks of *companyid*.
+
 Construct relational algebra for the following queries:
 
 * **Q1**: Find the *ssn* of the persons who work at Google(*companyid* = 601) and hold more than 500 *sharenum*
    of stock from Facebook(*companyid* = 700).
 
 * **Q2**: Find the *ssn* of the persons who own all the different kinds of stocks his/her manager owns.
-    (Note: we only consider the type(*companyid*), we do not consider the *sharenum*). 
+    (Note: we only consider the type(*companyid*), we do not consider the *sharenum*).
 
-* **Q2**: Find the *ssn* of the persons who own at least three different types stocks.  
+* **Q2**: Find the *ssn* of the persons who own at least three different types stocks.
 
 
 ## 2. More Relational Algebra
@@ -47,12 +47,12 @@ Construct relational algebra for the following queries:
 
 T1
 
-|A | B | C |  
+|A | B | C |
 |---|---|---|
 |1 | x | a |
 |2 | y | c |
 |2 | y | b |
-|2 | z | c | 
+|2 | z | c |
 
 
 T2
@@ -66,15 +66,15 @@ B | C | D
 
 Write the result table for the relational algebra expressions:
 
-Note: Here, we assume the attributes whose values are all numbers are the type: integers 
+Note: Here, we assume the attributes whose values are all numbers are the type: integers
 and all the letters are type: char.
 
 
 1. π<sub>A,B</sub>(T1)
 
-2. T2 × π<sub>A</sub>(T2)
+2. T1 × π<sub>A</sub>(T1)
 
-3. T1 ⨝<sub>T1.B=T2.C</sub> T2 
+3. T1 ⨝<sub>T1.B=T2.C</sub> T2
 
 4. T1 − (T1 ∩ T2)
 
@@ -99,7 +99,7 @@ First, describe the meaning of following relational algebra expressions in one o
 Second, Translate the following relational algebra expressions in SQL. Make sure your SQL can be executed.
 
 
-1. π<sub>storeid, s_name</sub>(σ<sub>employee_number<=100 or city = "New York"(Store))
+1. π<sub>storeid, s_name</sub>(σ<sub>employee_number<=100 or city = "New York"</sub>(Store))
 
 2. π<sub>s_name(((σ<sub>g_name = "pencil"</sub>Goods) ⨝ Supply) ⨝ Store)
 
