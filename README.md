@@ -96,7 +96,7 @@ Here are three relationship, (primary keys are in **bold**):
 ### Requirements:
 
 First, describe the meaning of following relational algebra expressions in one or two sentences.
-Second, Translate the following relational algebra expressions in SQL. Make sure your SQL can be executed.
+Second, translate the following relational algebra expressions in SQL. Make sure your SQL can be executed.
 
 
 1. π<sub>storeid, s_name</sub>(σ<sub>employee_number<=100 or city = "New York"</sub>(Store))
