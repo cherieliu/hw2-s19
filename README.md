@@ -103,4 +103,4 @@ Second, translate the following relational algebra expressions in SQL. Make sure
 
 2. π<sub>s_name(((σ<sub>g_name = "pencil"</sub>Goods) ⨝ Supply) ⨝ Store)
 
-3. π<sub>s_name, city(Supply÷π<sub>g_id</sub>(σ<sub>storeid='0808'</sub>(Supply))⨝ Store)
+3. π<sub>s_name, city((Supply÷π<sub>g_id</sub>(σ<sub>storeid='0808'</sub>(Supply)))⨝ Store)
