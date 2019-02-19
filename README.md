@@ -26,9 +26,9 @@ which points to another *Person* record .
 
 * Company(**companyid**, companyname, location)
 
-This table describes an employee(*ssn*) owns *sharenum* stocks of *companyid*.
-
 * Holding(**ssn**, **companyid**, sharenum)
+
+Holding table describes an employee(*ssn*) owns *sharenum* stocks of *companyid*.
 
 Construct relational algebra for the following queries:
 
