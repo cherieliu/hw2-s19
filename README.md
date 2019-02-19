@@ -21,14 +21,14 @@ Consider the simplified Employee Stock Ownership Database below (primary keys ar
 * Person(**ssn**, companyid, salary, managerid)
 
 This is an employee table. *companyid* is a foreign key which points to *Company*.
-We assume one employee can only works at one company. *managerid* is a foreign key
-which points to *Person* itself.
+We assume one employee can only work at one company. *managerid* is a foreign key
+which points to another *Person* record .
 
 * Company(**companyid**, companyname, location)
 
-* Holding(**ssn**, **companyid**, sharenum)
-
 This table describes an employee(*ssn*) owns *sharenum* stocks of *companyid*.
+
+* Holding(**ssn**, **companyid**, sharenum)
 
 Construct relational algebra for the following queries:
 
@@ -36,9 +36,9 @@ Construct relational algebra for the following queries:
    of stock from Facebook(*companyid* = 700).
 
 * **Q2**: Find the *ssn* of the persons who own all the different kinds of stocks his/her manager owns.
-    (Note: we only consider the type(*companyid*), we do not consider the *sharenum*).
+    (Note: Each *companyid* represents a different kind of stock, we do not care about the *sharenum* of stocks).
 
-* **Q2**: Find the *ssn* of the persons who own at least three different types of stocks.
+* **Q2**: Find the *ssn* of the persons who own at least three different kinds of stocks.
 
 
 ## 2. More Relational Algebra
@@ -64,10 +64,10 @@ B | C | D
 3 | x | a
 
 
-Write the result table for the relational algebra expressions:
+Write the result table for the relational algebra expressions in a similar with T1 and T2:
 
 Note: Here, we assume the attributes whose values are all numbers are the same type: integers
-and all the letters are the same type: char.
+and all the letters are the same type: char. If the result table is empty, write the schema of the table.
 
 
 1. π<sub>A,B</sub>(T1)
@@ -101,6 +101,6 @@ Second, translate the following relational algebra expressions in SQL. Make sure
 
 1. π<sub>storeid, s_name</sub>(σ<sub>employee_number<=100 or city = "New York"</sub>(Store))
 
-2. π<sub>s_name(((σ<sub>g_name = "pencil"</sub>Goods) ⨝ Supply) ⨝ Store)
+2. π<sub>s_name</sub>(((σ<sub>g_name = "pencil"</sub>Goods) ⨝ Supply) ⨝ Store)
 
-3. π<sub>s_name, city((Supply÷π<sub>g_id</sub>(σ<sub>storeid='0808'</sub>(Supply)))⨝ Store)
+3. π<sub>s_name, city</sub>((Supply÷π<sub>g_id</sub>(σ<sub>storeid='0808'</sub>(Supply)))⨝ Store)
