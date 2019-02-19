@@ -7,8 +7,7 @@
 ## Submission
 
 ### Format
-1. Type your answer (markdown or latex or ...).
-2. Each question occupies separate pages.
+Use this [template](https://github.com/w4111/hw2-s19/blob/master/template.tex)
 
 ### Submit your pdf on GradeScope
 
