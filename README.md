@@ -38,7 +38,7 @@ Construct relational algebra for the following queries:
 * **Q2**: Find the *ssn* of the persons who own all the different kinds of stocks his/her manager owns.
     (Note: Each *companyid* represents a different kind of stock, we do not care about the *sharenum* of stocks).
 
-* **Q2**: Find the *ssn* of the persons who own at least three different kinds of stocks.
+* **Q3**: Find the *ssn* of the persons who own at least three different kinds of stocks.
 
 
 ## 2. More Relational Algebra
