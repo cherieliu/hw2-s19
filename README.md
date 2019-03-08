@@ -4,6 +4,10 @@
 * Due: Mar 5 at 10:00AM
 * Worth 3.75% of your grade
 
+## Solution
+
+[Solution](https://github.com/w4111/hw2-s19/blob/master/hw2-sol.md) released!
+
 ## Submission
 
 ### Format
