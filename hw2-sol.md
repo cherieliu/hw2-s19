@@ -1,7 +1,7 @@
 # Homework 2 Solution
 
 ## 1.1 
-a
+
 π<sub>ssn</sub>(σ<sub>companyid=601</sub>Person) ∩ 
 π<sub>ssn</sub>(σ<sub>companyid=700 ∧ sharenum > 500 </sub> (Holding)) 
 
