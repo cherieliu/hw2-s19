@@ -59,6 +59,16 @@ p(tmp2, Holding)
 |2 | y | c | 2 | y | c |
 |2 | y | b | 2 | y | c |
 
+Note: For 4111 course, equijoin means join on the attributes with the **same** name in two tables.
+Solely for the purposes of HW2, we will give points if you used the R.a = S.a to denote equijoin, and if you dropped the second copy of the column when writing your answers, like the answer below. 
+
+|A | B | C | B | D |
+|---|---|---|---|---|
+|1 | x | a | 1 | c |
+|1 | x | a | 3 | a |
+|2 | y | c | 2 | c |
+|2 | y | b | 2 | c |
+
 ## 2.4
 
 
